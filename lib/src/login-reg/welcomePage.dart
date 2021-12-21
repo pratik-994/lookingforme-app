@@ -15,7 +15,7 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  Widget _submitButton() {
+  Widget _loginButton() {
     return InkWell(
       onTap: () {
         Navigator.push(
@@ -110,7 +110,7 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(
                 height: 80,
               ),
-              _submitButton(),
+              _loginButton(),
               SizedBox(
                 height: 20,
               ),

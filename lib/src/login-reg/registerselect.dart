@@ -14,7 +14,7 @@ class registerselect extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<registerselect> {
-  Widget _submitButton() {
+  Widget _customerSignupButton() {
     return InkWell(
       onTap: () {
         Navigator.push(
@@ -35,7 +35,7 @@ class _WelcomePageState extends State<registerselect> {
     );
   }
 
-   Widget _signUpButton() {
+   Widget _workerSignUpButton() {
     return InkWell(
       onTap: () {
         Navigator.push(
@@ -99,11 +99,11 @@ class _WelcomePageState extends State<registerselect> {
               SizedBox(
                 height: 50,
               ),
-              _submitButton(),
+              _customerSignupButton(),
               SizedBox(
                 height: 20,
               ),
-              _signUpButton(),
+              _workerSignUpButton(),
               SizedBox(
                 height: 20,
               ),
