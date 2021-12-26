@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_signup/src/login-reg/registerselect.dart';
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
 
 import '../Widget/bezierContainer.dart';
@@ -67,7 +68,7 @@ class _welcomePageState extends State<welcomePage> {
               end: Alignment.centerRight,
               colors: [Color(0xFF26c6DA), Color(0xFFB2EBF2)])),
       child: MaterialButton(
-          child: Text("Singup"),
+          child: Text("Sign Up"),
           //   color: primaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
@@ -75,7 +76,7 @@ class _welcomePageState extends State<welcomePage> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => WorkerSignup(),
+                builder: (context) => registerselect(),
               ),
             );
           }),
