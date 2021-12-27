@@ -71,7 +71,7 @@ class MyProfile extends StatelessWidget {
                               // ignore: prefer_const_literals_to_create_immutables
                               children: [
                                 Text(
-                                  "Fuck off",
+                                  "User",
                                   style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.bold,
@@ -81,7 +81,7 @@ class MyProfile extends StatelessWidget {
                                 SizedBox(
                                   height: 10,
                                 ),
-                                Text("fuckyou2@gmail.com"),
+                                Text("user@user.com"),
                               ],
                             ),
                             CircleAvatar(
@@ -103,7 +103,7 @@ class MyProfile extends StatelessWidget {
                   listTile(
                       icon: Icons.location_on_outlined, title: "Report A bug"),
                   listTile(
-                      icon: Icons.person_outline, title: "Refer A Friends"),
+                      icon: Icons.person_outline, title: "Refer To A Friend"),
                   listTile(
                       icon: Icons.file_copy_outlined,
                       title: "Terms & Conditions"),
@@ -111,7 +111,7 @@ class MyProfile extends StatelessWidget {
                       icon: Icons.policy_outlined, title: "Privacy Policy"),
                   listTile(icon: Icons.add_chart, title: "About"),
                   listTile(
-                      icon: Icons.exit_to_app_outlined, title: "Bhira Janey"),
+                      icon: Icons.exit_to_app_outlined, title: "Sign Out"),
                 ],
               ),
             ),
@@ -123,7 +123,7 @@ class MyProfile extends StatelessWidget {
               backgroundColor: primaryColor,
               child: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://www.seekpng.com/ipng/u2q8w7r5u2o0o0i1_circled-user-icon-user-profile-icon-png/" ),
+                    "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png" ),
                 radius: 45,
                 backgroundColor: scaffoldBackgroundColor,
               ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/src/login-reg/registerselect.dart';
+import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
 import 'package:flutter_login_signup/src/profile/MyProfile.dart';
 
@@ -77,7 +77,7 @@ class _regSelectState extends State<regSelect> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => registerselect(),
+                builder: (context) => regSelect(),
               ),
             );
           }),
@@ -88,16 +88,16 @@ class _regSelectState extends State<regSelect> {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-          text: 'Looking',
+          text: 'Create',
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.w700, color: Colors.cyan),
           children: [
             TextSpan(
-              text: ' For ',
+              text: ' Your ',
               style: TextStyle(color: Colors.black, fontSize: 30),
             ),
             TextSpan(
-              text: 'Me?',
+              text: 'Account',
               style: TextStyle(color: Colors.cyan, fontSize: 30),
             ),
           ]),

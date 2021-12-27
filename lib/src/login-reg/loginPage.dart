@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
 import 'package:flutter_login_signup/src/login-reg/customerReg.dart';
-import 'package:flutter_login_signup/src/login-reg/registerselect.dart';
+import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../Widget/bezierContainer.dart';
@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => registerselect()));
+            context, MaterialPageRoute(builder: (context) => regSelect()));
       },
       child: Container(
         margin: EdgeInsets.symmetric(vertical: 20),
