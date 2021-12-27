@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/src/login-reg/registerselect.dart';
+import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
+
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
 import 'package:flutter_login_signup/src/profile/MyProfile.dart';
 
@@ -77,7 +78,7 @@ class _welcomePageState extends State<welcomePage> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => registerselect(),
+                builder: (context) => regSelect(),
               ),
             );
           }),
