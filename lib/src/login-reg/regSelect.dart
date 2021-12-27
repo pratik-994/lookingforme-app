@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_signup/src/login-reg/customerReg.dart';
 import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
 import 'package:flutter_login_signup/src/profile/MyProfile.dart';
@@ -43,7 +44,7 @@ class _regSelectState extends State<regSelect> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => MyProfile(),
+                builder: (context) => WorkerSignup(),
               ),
             );
           }),
@@ -77,7 +78,7 @@ class _regSelectState extends State<regSelect> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => regSelect(),
+                builder: (context) => CustomerSignup(),
               ),
             );
           }),

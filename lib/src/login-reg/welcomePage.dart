@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_signup/src/login-reg/loginPage.dart';
 import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
 
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
@@ -44,7 +45,7 @@ class _welcomePageState extends State<welcomePage> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => MyProfile(),
+                builder: (context) => LoginPage(),
               ),
             );
           }),
@@ -91,7 +92,7 @@ class _welcomePageState extends State<welcomePage> {
       text: TextSpan(
           text: 'Looking',
           style: TextStyle(
-              fontSize: 30, fontWeight: FontWeight.w700, color: Colors.cyan),
+              fontSize: 30, fontWeight: FontWeight.w500, color: Colors.cyan),
           children: [
             TextSpan(
               text: ' For ',
