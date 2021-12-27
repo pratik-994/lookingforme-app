@@ -123,7 +123,7 @@ class MyProfile extends StatelessWidget {
               backgroundColor: primaryColor,
               child: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://purepng.com/public/uploads/thumbnail//lana-rhoades-white-underwear-cvo.png"),
+                    "https://www.seekpng.com/ipng/u2q8w7r5u2o0o0i1_circled-user-icon-user-profile-icon-png/" ),
                 radius: 45,
                 backgroundColor: scaffoldBackgroundColor,
               ),
