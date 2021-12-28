@@ -101,9 +101,7 @@ class MyProfile extends StatelessWidget {
                     ],
                   ),
                   listTile(
-                      icon: Icons.location_on_outlined, title: "Report A bug"),
-                  listTile(
-                      icon: Icons.person_outline, title: "Refer To A Friend"),
+                      icon: Icons.person_outline, title: "My Information"),
                   listTile(
                       icon: Icons.file_copy_outlined,
                       title: "Terms & Conditions"),
@@ -123,7 +121,7 @@ class MyProfile extends StatelessWidget {
               backgroundColor: primaryColor,
               child: CircleAvatar(
                 backgroundImage: NetworkImage(
-                    "https://www.seekpng.com/png/detail/41-410093_circled-user-icon-user-profile-icon-png.png" ),
+                    "https://yorktonrentals.com/wp-content/uploads/2017/06/usericon.png"),
                 radius: 45,
                 backgroundColor: scaffoldBackgroundColor,
               ),

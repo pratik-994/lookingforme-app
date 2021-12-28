@@ -79,7 +79,7 @@ class _welcomePageState extends State<welcomePage> {
           onPressed: () {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => regSelect(),
+                builder: (context) => MyProfile(),
               ),
             );
           }),
