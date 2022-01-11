@@ -51,6 +51,27 @@ class _regSelectState extends State<regSelect> {
     );
   }
 
+  Widget _backButton() {
+    return InkWell(
+      onTap: () {
+        Navigator.pop(context);
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10),
+        child: Row(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.only(left: 0, top: 10, bottom: 10),
+              child: Icon(Icons.keyboard_arrow_left, color: Colors.cyan),
+            ),
+            Text('Back',
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500))
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _sinupButton() {
     return Container(
       width: MediaQuery.of(context).size.width,
@@ -124,6 +145,7 @@ class _regSelectState extends State<regSelect> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                 
                   SizedBox(height: height * .2),
                   _title(),
                   SizedBox(height: 50),
@@ -137,6 +159,7 @@ class _regSelectState extends State<regSelect> {
               ),
             ),
           ),
+           Positioned(top: 40, left: 0, child: _backButton()),
         ],
       ),
     ));

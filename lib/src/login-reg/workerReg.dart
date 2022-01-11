@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/src/Widget/bezierContainer.dart';
 import 'package:flutter_login_signup/src/login-reg/loginPage.dart';
@@ -79,7 +78,8 @@ class _WorkerSignupState extends State<WorkerSignup> {
               colors: [Colors.cyan, Colors.cyanAccent])),
       child: Text(
         'Register Now',
-        style: TextStyle(fontSize: 20, color: Colors.white, fontFamily: "roboto"),
+        style:
+            TextStyle(fontSize: 20, color: Colors.white, fontFamily: "roboto"),
       ),
     );
   }
@@ -128,12 +128,12 @@ class _WorkerSignupState extends State<WorkerSignup> {
               color: Colors.cyanAccent),
           children: [
             TextSpan(
-              text: ' Registration ',
-              style: GoogleFonts.oswald(
-                textStyle: TextStyle(color: Colors.black, fontSize: 30),
-              )
-              // TextStyle(color: Colors.black, fontSize: 30),
-            ),
+                text: ' Registration ',
+                style: GoogleFonts.oswald(
+                  textStyle: TextStyle(color: Colors.black, fontSize: 30),
+                )
+                // TextStyle(color: Colors.black, fontSize: 30),
+                ),
           ]),
     );
   }
@@ -146,13 +146,11 @@ class _WorkerSignupState extends State<WorkerSignup> {
         _entryField("Password", isPassword: true),
         _entryField("Contact"),
         _entryField("Address"),
-        _entryField("Bio"),
+        // _entryField("Bio"),
       ],
     );
   }
 
-
-    
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -179,6 +177,16 @@ class _WorkerSignupState extends State<WorkerSignup> {
                       height: 50,
                     ),
                     _emailPasswordWidget(),
+                    TextField(
+                      keyboardType: TextInputType.multiline,
+                      maxLines: null,
+                      decoration: InputDecoration(
+                        hintText: "Enter your bio",
+                        hintStyle: TextStyle(
+                          color: Colors.grey
+                        )
+                      ),
+                    ),
                     SizedBox(
                       height: 20,
                     ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/src/Widget/bezierContainer.dart';
+import 'package:flutter_login_signup/src/homepage/customerHomepage.dart';
 import 'package:flutter_login_signup/src/login-reg/loginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -76,10 +77,24 @@ class _CustomerSignupState extends State<CustomerSignup> {
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: [Colors.cyan, Colors.cyanAccent])),
-      child: Text(
-        'Register Now',
-        style: TextStyle(fontSize: 20, color: Colors.white),
-      ),
+      // child: Text(
+      //   'Register Now',
+      //   style: TextStyle(fontSize: 20, color: Colors.white),
+      // ),
+      child: MaterialButton(
+          child: Text("Register now"),
+          //   color: primaryColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => customerHomepage(),
+              ),
+            );
+          }),
+      
     );
   }
 
