@@ -86,39 +86,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  // Widget _divider() {
-  //   return Container(
-  //     margin: EdgeInsets.symmetric(vertical: 10),
-  //     child: Row(
-  //       children: <Widget>[
-  //         SizedBox(
-  //           width: 20,
-  //         ),
-  //         Expanded(
-  //           child: Padding(
-  //             padding: EdgeInsets.symmetric(horizontal: 10),
-  //             child: Divider(
-  //               thickness: 1,
-  //             ),
-  //           ),
-  //         ),
-  //         Text('or'),
-  //         Expanded(
-  //           child: Padding(
-  //             padding: EdgeInsets.symmetric(horizontal: 10),
-  //             child: Divider(
-  //               thickness: 1,
-  //             ),
-  //           ),
-  //         ),
-  //         SizedBox(
-  //           width: 20,
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
-
   Widget _createAccountLabel() {
     return InkWell(
       onTap: () {
@@ -158,9 +125,7 @@ class _LoginPageState extends State<LoginPage> {
       text: TextSpan(
           text: 'Looking',
           style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.w700,
-              color: Colors.cyan),
+              fontSize: 30, fontWeight: FontWeight.w700, color: Colors.cyan),
           children: [
             TextSpan(
               text: ' For ',
@@ -215,7 +180,6 @@ class _LoginPageState extends State<LoginPage> {
                     //     style: TextStyle(
                     //         fontSize: 14, fontWeight: FontWeight.w500)),
                   ),
-                  
                   SizedBox(height: height * .055),
                   _createAccountLabel(),
                 ],
