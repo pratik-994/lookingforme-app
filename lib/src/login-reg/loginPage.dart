@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/src/login-reg/welcomePage.dart';
-import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
-import 'package:flutter_login_signup/src/login-reg/customerReg.dart';
+import 'package:flutter_login_signup/main/main.dart';
+
 import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 import '../Widget/bezierContainer.dart';
 
@@ -64,7 +63,11 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _submitButton() {
     return InkWell(
-      onTap: () => welcomePage(),
+      onTap: (){
+         Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MyHomePage()));
+      },
       child: Container(
         width: MediaQuery.of(context).size.width,
         padding: EdgeInsets.symmetric(vertical: 15),
