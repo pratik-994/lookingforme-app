@@ -5,7 +5,7 @@ import 'package:iconly/iconly.dart';
 
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,22 +13,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: MyHomePage(title: 'Flutter App'),
+      home: editProfile(title: 'Flutter App'),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+class editProfile extends StatefulWidget {
+  editProfile({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _editProfileState createState() => _editProfileState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _editProfileState extends State<editProfile> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => MyProfileScreen(
+                  builder: (context) => profileScreen(
                     role: 'Worker',
                   ),
                 ),
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MyProfileScreen(
+                          builder: (context) => profileScreen(
                             role: 'Worker',
                           ),
                         ),
@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MyProfileScreen(
+                          builder: (context) => profileScreen(
                             role: 'User',
                           ),
                         ),

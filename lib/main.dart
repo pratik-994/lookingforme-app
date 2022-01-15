@@ -1,7 +1,12 @@
+// ignore_for_file: unused_import
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/src/authenticate/authenticate.dart';
 import 'package:flutter_login_signup/src/homepage/workerHomepage.dart';
+import 'package:flutter_login_signup/src/profile/EditProfile.dart';
+import 'package:flutter_login_signup/src/profile/MyProfile.dart';
+import 'package:flutter_login_signup/src/profile/profileScreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'src/login-reg/welcomePage.dart';
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
          ),
       ),
       debugShowCheckedModeBanner: false,
-      home: workerHomepage(),
+      home: welcomePage(),
     );
   }
 }

@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_login_signup/src/Widget/colors.dart';
+import 'package:flutter_login_signup/src/profile/EditProfile.dart';
 
 class MyProfile extends StatelessWidget {
   @override
@@ -68,7 +69,7 @@ class MyProfile extends StatelessWidget {
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              // ignore: prefer_const_literals_to_create_immutables
+                              
                               children: [
                                 Text(
                                   "User",
@@ -88,11 +89,12 @@ class MyProfile extends StatelessWidget {
                                 radius: 15,
                                 backgroundColor: primaryColor,
                                 child: CircleAvatar(
-                                  radius: 12,
-                                  child: Icon(
-                                    Icons.edit,
-                                    color: primaryColor,
-                                  ),
+                                  radius: 20,
+                                  child: IconButton(iconSize: 20, icon: Icon(Icons.edit), onPressed: () {editProfile; } ),
+                                  // child: Icon(
+                                  //   Icons.edit,
+                                  //   color: primaryColor,
+                                  // ),
                                   backgroundColor: scaffoldBackgroundColor,
                                 ))
                           ],

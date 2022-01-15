@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_signup/src/login-reg/welcomePage.dart';
 import 'package:flutter_login_signup/src/login-reg/workerReg.dart';
 import 'package:flutter_login_signup/src/login-reg/customerReg.dart';
 import 'package:flutter_login_signup/src/login-reg/regSelect.dart';
@@ -62,26 +63,30 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _submitButton() {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.symmetric(vertical: 15),
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(5)),
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-                color: Colors.grey.shade200,
-                offset: Offset(2, 4),
-                blurRadius: 5,
-                spreadRadius: 2)
-          ],
-          gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [Color(0xFF26c6DA), Color(0xFFB2EBF2)])),
-      child: Text(
-        'Login',
-        style: TextStyle(fontSize: 20, color: Colors.white),
+    return InkWell(
+      onTap: () => welcomePage(),
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        padding: EdgeInsets.symmetric(vertical: 15),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.grey.shade200,
+                  offset: Offset(2, 4),
+                  blurRadius: 5,
+                  spreadRadius: 2)
+            ],
+            gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [Color(0xFF26c6DA), Color(0xFFB2EBF2)])),
+        child: Text(
+          'Login',
+        
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
       ),
     );
   }
@@ -176,9 +181,7 @@ class _LoginPageState extends State<LoginPage> {
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10),
                     alignment: Alignment.centerLeft,
-                    // child: Text('Forgot Password ?',
-                    //     style: TextStyle(
-                    //         fontSize: 14, fontWeight: FontWeight.w500)),
+                  
                   ),
                   SizedBox(height: height * .055),
                   _createAccountLabel(),

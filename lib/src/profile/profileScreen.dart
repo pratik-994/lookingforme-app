@@ -6,16 +6,16 @@ import 'package:iconly/iconly.dart';
 import 'package:http/http.dart' as http;
 import 'package:google_fonts/google_fonts.dart';
 
-class MyProfileScreen extends StatefulWidget {
-  MyProfileScreen({Key? key, required this.role}) : super(key: key);
+class profileScreen extends StatefulWidget {
+  profileScreen({Key? key, required this.role}) : super(key: key);
 
   final String role;
 
   @override
-  _MyProfileScreenState createState() => _MyProfileScreenState();
+  _profileScreenState createState() => _profileScreenState();
 }
 
-class _MyProfileScreenState extends State<MyProfileScreen> {
+class _profileScreenState extends State<profileScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
 
   String fullName = '';
@@ -48,11 +48,11 @@ class _MyProfileScreenState extends State<MyProfileScreen> {
 
   init() async {
     setState(() {
-      fullName = 'Flutter Developer';
-      email = 'developer@flutter.com';
-      contact = '+977-9800000000';
+      fullName = 'Pratik Gyawali';
+      email = 'pratik.gyawali@gmail.com';
+      contact = '9348023752';
       address = 'Baneshwor, KTM, Nepal';
-      bio = 'My Bio.......';
+      bio = 'Bio';
       _fullNameController.text = fullName;
       _contactController.text = contact;
       _emailController.text = email;

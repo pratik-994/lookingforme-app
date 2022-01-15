@@ -5,7 +5,7 @@ import 'package:flutter_login_signup/src/login-reg/loginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomerSignup extends StatefulWidget {
-  CustomerSignup({Key ?key, this.title}) : super(key: key);
+  CustomerSignup({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
@@ -94,7 +94,6 @@ class _CustomerSignupState extends State<CustomerSignup> {
               ),
             );
           }),
-      
     );
   }
 
@@ -139,9 +138,7 @@ class _CustomerSignupState extends State<CustomerSignup> {
           style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.w700,
-              color: Colors.cyanAccent
-          ),
-
+              color: Colors.cyanAccent),
           children: [
             TextSpan(
               text: ' Registration ',
